@@ -1,0 +1,1208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="A six- and twelve-month national licensing-partner campaign proposal prepared by mg Magazine for Lion Labs.">
+  <meta name="theme-color" content="#071c2a">
+  <title>Lion Labs x mg | National Growth &amp; Licensing Partner Campaign</title>
+  <style>
+    :root {
+      --navy: #071c2a;
+      --navy-2: #0c2a3b;
+      --teal: #10b8b8;
+      --teal-dark: #087f84;
+      --cream: #f4f0e8;
+      --paper: #fbfaf7;
+      --white: #ffffff;
+      --ink: #10222d;
+      --muted: #60717a;
+      --line: #d9e1e2;
+      --shadow: 0 22px 60px rgba(7, 28, 42, 0.12);
+      --radius: 26px;
+      --radius-sm: 16px;
+      --wrap: min(1180px, calc(100% - 44px));
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.58;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    img, svg { display: block; max-width: 100%; }
+
+    .skip-link {
+      position: fixed;
+      left: 18px;
+      top: -80px;
+      z-index: 1000;
+      padding: 11px 16px;
+      border-radius: 10px;
+      background: var(--teal);
+      color: var(--navy);
+      font-weight: 800;
+      transition: top .2s ease;
+    }
+    .skip-link:focus { top: 18px; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(7, 28, 42, 0.94);
+      color: var(--white);
+      border-bottom: 1px solid rgba(255,255,255,.12);
+      backdrop-filter: blur(16px);
+    }
+    .topbar-inner {
+      width: var(--wrap);
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .mg-logo {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      flex: 0 0 auto;
+    }
+    .brand-label {
+      padding-left: 12px;
+      border-left: 1px solid rgba(255,255,255,.28);
+      color: #ced9dd;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 5px;
+    }
+    .nav a, .print-button {
+      border: 0;
+      border-radius: 999px;
+      padding: 9px 12px;
+      background: transparent;
+      color: #d7e0e3;
+      font: inherit;
+      font-size: 12px;
+      font-weight: 750;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .nav a:hover, .nav a:focus-visible, .print-button:hover, .print-button:focus-visible {
+      background: rgba(255,255,255,.1);
+      color: var(--white);
+      outline: none;
+    }
+    .print-button {
+      margin-left: 4px;
+      background: var(--teal);
+      color: var(--navy);
+    }
+    .print-button:hover, .print-button:focus-visible {
+      background: #35cece;
+      color: var(--navy);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 78% 20%, rgba(16,184,184,.23), transparent 28%),
+        linear-gradient(135deg, var(--navy) 0%, #092636 58%, #0b3344 100%);
+      color: var(--white);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 520px;
+      height: 520px;
+      right: -240px;
+      bottom: -340px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 50%;
+      box-shadow: 0 0 0 70px rgba(255,255,255,.018), 0 0 0 140px rgba(255,255,255,.018);
+    }
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      width: var(--wrap);
+      margin: 0 auto;
+      padding: 92px 0 82px;
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      align-items: center;
+      gap: 72px;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 21px;
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background: currentColor;
+    }
+    .hero h1 {
+      max-width: 760px;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(48px, 6vw, 78px);
+      font-weight: 600;
+      letter-spacing: -.045em;
+      line-height: .99;
+    }
+    .hero-copy {
+      max-width: 720px;
+      margin: 27px 0 0;
+      color: #d7e3e7;
+      font-size: 18px;
+      line-height: 1.66;
+    }
+    .hero-meta {
+      margin-top: 32px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .meta-pill {
+      padding: 10px 14px;
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      color: #e9f0f2;
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: .03em;
+    }
+
+    .portfolio-card {
+      position: relative;
+      padding: 28px;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 32px;
+      background: rgba(255,255,255,.075);
+      box-shadow: 0 32px 80px rgba(0,0,0,.22);
+      backdrop-filter: blur(12px);
+    }
+    .portfolio-card::before {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      border-radius: inherit;
+      background: linear-gradient(145deg, rgba(255,255,255,.18), transparent 38%, rgba(16,184,184,.25));
+      pointer-events: none;
+      mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      padding: 1px;
+    }
+    .portfolio-kicker {
+      color: #b9c9ce;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .portfolio-title {
+      max-width: 360px;
+      margin: 9px 0 20px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 30px;
+      line-height: 1.15;
+    }
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .category-tile {
+      min-height: 76px;
+      padding: 17px;
+      display: flex;
+      align-items: flex-end;
+      border-radius: 17px;
+      overflow: hidden;
+      color: var(--white);
+      background: linear-gradient(135deg, rgba(255,255,255,.12), rgba(16,184,184,.2));
+      border: 1px solid rgba(255,255,255,.12);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: .01em;
+    }
+    .category-tile:nth-child(1) { background: linear-gradient(135deg, #5533a8, #8463d8); }
+    .category-tile:nth-child(2) { background: linear-gradient(135deg, #d3413c, #f27d62); }
+    .category-tile:nth-child(3) { background: linear-gradient(135deg, #167d74, #24b79e); }
+    .category-tile:nth-child(4) { background: linear-gradient(135deg, #334650, #75909b); }
+    .portfolio-note {
+      margin: 18px 0 0;
+      color: #cfdbdf;
+      font-size: 13px;
+    }
+
+    .section {
+      width: var(--wrap);
+      margin: 0 auto;
+      padding: 94px 0;
+    }
+    .section-sm { padding-top: 74px; padding-bottom: 74px; }
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 14px;
+      color: var(--teal-dark);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+    }
+    .section-label::before {
+      content: "";
+      width: 28px;
+      height: 3px;
+      border-radius: 999px;
+      background: currentColor;
+    }
+    .section h2 {
+      max-width: 820px;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(38px, 5vw, 62px);
+      font-weight: 600;
+      letter-spacing: -.04em;
+      line-height: 1.05;
+    }
+    .section-lead {
+      max-width: 810px;
+      margin: 23px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.72;
+    }
+    .fine-print {
+      margin: 16px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .metrics-band {
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+    }
+    .metrics {
+      width: var(--wrap);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .metric {
+      min-height: 154px;
+      padding: 35px 34px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-right: 1px solid var(--line);
+    }
+    .metric:first-child { border-left: 1px solid var(--line); }
+    .metric strong {
+      color: var(--navy);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 42px;
+      letter-spacing: -.035em;
+      line-height: 1;
+    }
+    .metric span {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .opportunity-grid {
+      margin-top: 48px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .opportunity-card {
+      min-height: 272px;
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: 0 10px 30px rgba(7,28,42,.045);
+    }
+    .card-accent {
+      width: 46px;
+      height: 5px;
+      border-radius: 999px;
+      background: var(--teal);
+    }
+    .opportunity-card h3 {
+      margin: 25px 0 11px;
+      color: var(--navy);
+      font-size: 20px;
+      line-height: 1.25;
+    }
+    .opportunity-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .formula-wrap {
+      width: 100%;
+      background: var(--cream);
+      border-top: 1px solid #e2ddd2;
+      border-bottom: 1px solid #e2ddd2;
+    }
+    .formula {
+      margin-top: 52px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      overflow: hidden;
+      border: 1px solid #dcd6cb;
+      border-radius: var(--radius);
+      background: #dcd6cb;
+    }
+    .phase {
+      min-height: 330px;
+      padding: 36px;
+      background: var(--white);
+    }
+    .phase-kicker {
+      color: var(--teal-dark);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .phase h3 {
+      margin: 17px 0 14px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 31px;
+      line-height: 1.1;
+    }
+    .phase p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .phase ul {
+      margin: 22px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .phase li {
+      position: relative;
+      margin-top: 8px;
+      padding-left: 17px;
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .phase li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .62em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--teal);
+    }
+
+    .message-box {
+      margin-top: 38px;
+      padding: 33px 36px;
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 30px;
+      align-items: start;
+      border-radius: var(--radius);
+      background: var(--navy);
+      color: var(--white);
+    }
+    .message-box .label {
+      color: var(--teal);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .message-box blockquote {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(25px, 3vw, 38px);
+      letter-spacing: -.025em;
+      line-height: 1.18;
+    }
+
+    .services {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+    .service {
+      position: relative;
+      min-height: 320px;
+      padding: 34px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+      overflow: hidden;
+    }
+    .service::after {
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      right: -63px;
+      bottom: -65px;
+      border: 20px solid rgba(16,184,184,.08);
+      border-radius: 50%;
+    }
+    .service-top {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 24px;
+    }
+    .service-type {
+      color: var(--teal-dark);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .service h3 {
+      margin: 11px 0 0;
+      color: var(--navy);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 28px;
+      line-height: 1.1;
+    }
+    .price {
+      flex: 0 0 auto;
+      color: var(--navy);
+      font-size: 17px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+    .service p {
+      position: relative;
+      z-index: 1;
+      margin: 19px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .service ul {
+      position: relative;
+      z-index: 1;
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .service li {
+      position: relative;
+      margin-top: 8px;
+      padding-left: 19px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .service li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--teal-dark);
+      font-weight: 900;
+    }
+    .service.editorial {
+      grid-column: 1 / -1;
+      min-height: 0;
+      background: #f8fbfb;
+    }
+    .editorial-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 38px;
+    }
+    .editorial-note {
+      padding-left: 30px;
+      border-left: 1px solid var(--line);
+    }
+
+    .investment-wrap {
+      background: var(--navy);
+      color: var(--white);
+    }
+    .investment-wrap .section-label { color: var(--teal); }
+    .investment-wrap .section-lead { color: #cbd9de; }
+    .options {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: stretch;
+      gap: 20px;
+    }
+    .option {
+      position: relative;
+      padding: 38px;
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.06);
+    }
+    .option.recommended {
+      border-color: var(--teal);
+      background: var(--white);
+      color: var(--ink);
+      box-shadow: var(--shadow);
+    }
+    .recommended-label {
+      position: absolute;
+      right: 25px;
+      top: 25px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: var(--teal);
+      color: var(--navy);
+      font-size: 9px;
+      font-weight: 950;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .option-kicker {
+      color: var(--teal);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .recommended .option-kicker { color: var(--teal-dark); }
+    .option h3 {
+      margin: 14px 0 8px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 34px;
+      line-height: 1.08;
+    }
+    .option-summary {
+      min-height: 52px;
+      margin: 0;
+      color: #c8d5da;
+      font-size: 13px;
+    }
+    .recommended .option-summary { color: var(--muted); }
+    .option-lines {
+      margin: 28px 0 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid rgba(255,255,255,.15);
+    }
+    .recommended .option-lines { border-top-color: var(--line); }
+    .option-lines li {
+      padding: 13px 0;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      border-bottom: 1px solid rgba(255,255,255,.11);
+      color: #eef4f5;
+      font-size: 13px;
+    }
+    .recommended .option-lines li {
+      border-bottom-color: var(--line);
+      color: var(--ink);
+    }
+    .option-lines span:last-child { font-weight: 850; white-space: nowrap; }
+    .included { color: var(--teal) !important; }
+    .recommended .included { color: var(--teal-dark) !important; }
+    .total {
+      margin-top: 30px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .total-label {
+      color: #b9c9ce;
+      font-size: 10px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .recommended .total-label { color: var(--muted); }
+    .total strong {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 45px;
+      letter-spacing: -.04em;
+      line-height: 1;
+    }
+    .total small { color: #b9c9ce; font-size: 11px; }
+    .recommended .total small { color: var(--muted); }
+    .investment-note {
+      margin: 24px 0 0;
+      color: #aebfc5;
+      font-size: 12px;
+    }
+
+    .measurement {
+      margin-top: 30px;
+      padding: 36px;
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 38px;
+      border-radius: var(--radius);
+      background: var(--cream);
+      border: 1px solid #e2ddd2;
+    }
+    .measurement h2 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 30px;
+      line-height: 1.14;
+    }
+    .measurement ul {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 11px 22px;
+      list-style: none;
+    }
+    .measurement li {
+      position: relative;
+      padding-left: 18px;
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .measurement li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .62em;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--teal);
+    }
+
+    .cta {
+      padding: 94px 0;
+      background: var(--white);
+      text-align: center;
+    }
+    .cta-inner {
+      width: var(--wrap);
+      margin: 0 auto;
+    }
+    .cta .section-label { color: var(--teal-dark); }
+    .cta h2 {
+      max-width: 830px;
+      margin: 0 auto;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(40px, 5vw, 62px);
+      font-weight: 600;
+      letter-spacing: -.04em;
+      line-height: 1.05;
+    }
+    .cta p {
+      max-width: 660px;
+      margin: 22px auto 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+    .contact-actions {
+      margin-top: 31px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+    }
+    .button {
+      padding: 14px 20px;
+      border-radius: 999px;
+      background: var(--navy);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .08em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .button:hover, .button:focus-visible {
+      background: var(--navy-2);
+      outline: 3px solid rgba(16,184,184,.35);
+      outline-offset: 3px;
+    }
+    .email-link {
+      color: var(--navy);
+      font-size: 14px;
+      font-weight: 850;
+      text-underline-offset: 4px;
+    }
+    footer {
+      padding: 28px 0;
+      background: var(--navy);
+      color: #bfd0d5;
+      font-size: 12px;
+    }
+    .footer-inner {
+      width: var(--wrap);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .footer-contact a {
+      color: var(--teal);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    footer a { color: var(--white); text-decoration: none; }
+
+    @media (max-width: 1050px) {
+      .nav a { display: none; }
+      .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+      .portfolio-card { max-width: 660px; }
+    }
+    @media (max-width: 820px) {
+      :root { --wrap: min(100% - 28px, 720px); }
+      .hero-grid, .section, .cta { padding-top: 68px; padding-bottom: 68px; }
+      .metrics { grid-template-columns: 1fr; }
+      .metric, .metric:first-child { min-height: 118px; border-left: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+      .opportunity-grid, .formula, .services, .options { grid-template-columns: 1fr; }
+      .service.editorial { grid-column: auto; }
+      .editorial-grid, .message-box, .measurement { grid-template-columns: 1fr; }
+      .editorial-note { padding: 28px 0 0; border-left: 0; border-top: 1px solid var(--line); }
+      .option-summary { min-height: 0; }
+    }
+    @media (max-width: 600px) {
+      .brand-label { display: none; }
+      .hero h1 { font-size: 46px; }
+      .hero-copy, .section-lead { font-size: 16px; }
+      .portfolio-card, .opportunity-card, .phase, .service, .option, .measurement { padding: 26px; }
+      .category-grid { grid-template-columns: 1fr 1fr; }
+      .message-box { padding: 28px; gap: 15px; }
+      .measurement ul { grid-template-columns: 1fr; }
+      .service-top, .total { flex-direction: column; align-items: flex-start; }
+      .recommended-label { position: static; display: inline-flex; margin-bottom: 17px; }
+      .footer-inner { align-items: flex-start; flex-direction: column; }
+    }
+
+    @media print {
+      @page { margin: .55in; size: letter; }
+      body { background: var(--white); color: #000; font-size: 10pt; }
+      .topbar, .print-button, .skip-link { display: none !important; }
+      .hero { background: var(--navy) !important; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      .hero-grid { width: 100%; padding: 42px 0; grid-template-columns: 1.08fr .92fr; gap: 30px; }
+      .hero h1 { font-size: 42pt; }
+      .hero-copy { font-size: 11pt; }
+      .portfolio-card { padding: 20px; }
+      .category-tile { min-height: 58px; }
+      .metrics, .section, .cta-inner, .footer-inner { width: 100%; }
+      .section, .cta { padding: 42px 0; }
+      .section h2, .cta h2 { font-size: 29pt; }
+      .section-lead { font-size: 11pt; }
+      .opportunity-grid, .formula { gap: 8px; }
+      .opportunity-card, .phase, .service, .option, .measurement { break-inside: avoid; box-shadow: none; }
+      .services, .options { gap: 10px; }
+      .service { min-height: 0; padding: 24px; }
+      .service.editorial { grid-column: 1 / -1; }
+      .investment-wrap { background: var(--navy) !important; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      a { text-decoration: none; }
+      .button { background: var(--navy) !important; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      footer { background: var(--navy) !important; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to proposal</a>
+
+  <header class="topbar" aria-label="Proposal navigation">
+    <div class="topbar-inner">
+      <a class="brand" href="#top" aria-label="mg Magazine proposal home">
+        <img class="mg-logo" src="data:image/png;base64,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" alt="mg Magazine">
+        <span class="brand-label">Marketing &amp; Visibility Partner</span>
+      </a>
+      <nav class="nav" aria-label="Proposal sections">
+        <a href="#opportunity">Opportunity</a>
+        <a href="#strategy">Strategy</a>
+        <a href="#program">Program</a>
+        <a href="#investment">Investment</a>
+        <a href="#measurement">Measurement</a>
+        <button class="print-button" type="button" onclick="window.print()" aria-label="Print this proposal or save it as a PDF">Print / Save PDF</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="proposal-title">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Prepared for Lion Labs</p>
+          <h1 id="proposal-title">National growth starts with the right operating partners.</h1>
+          <p class="hero-copy">A six- to twelve-month campaign designed to introduce Lion Labs to qualified cannabis operators, establish the business case for partnership, and turn national visibility into meaningful licensing conversations.</p>
+          <div class="hero-meta" aria-label="Proposal details">
+            <span class="meta-pill">National B2B campaign</span>
+          </div>
+        </div>
+
+        <aside class="portfolio-card" aria-label="Lion Labs brand portfolio">
+          <div class="portfolio-kicker">A portfolio built to travel</div>
+          <div class="portfolio-title">Distinct brands across multiple categories.</div>
+          <div class="category-grid" aria-label="Lion Labs brands">
+            <div class="category-tile">Potpots</div>
+            <div class="category-tile">Pixils</div>
+            <div class="category-tile">SUNO</div>
+            <div class="category-tile">Element</div>
+          </div>
+          <p class="portfolio-note">The campaign presents the brand portfolio as evidence of Lion Labs' ability to help established operators enter differentiated categories without developing every concept internally.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="metrics-band" aria-label="mg audience reach">
+      <div class="metrics">
+        <div class="metric"><strong>965K</strong><span>active users, Jan. 1–July 15, 2026</span></div>
+        <div class="metric"><strong>1M+</strong><span>sessions during the same period</span></div>
+        <div class="metric"><strong>18K+</strong><span>cannabis industry newsletter subscribers</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="opportunity" aria-labelledby="opportunity-title">
+      <p class="section-label">The opportunity</p>
+      <h2 id="opportunity-title">This is not a general awareness campaign.</h2>
+      <p class="section-lead">Lion Labs already has meaningful recognition in Michigan. The next stage is national: reaching established operators in new markets that have the licenses, manufacturing capabilities, distribution, and sales strength required to bring the portfolio into market successfully.</p>
+
+      <div class="opportunity-grid">
+        <article class="opportunity-card">
+          <div class="card-accent" aria-hidden="true"></div>
+          <h3>Reach qualified operators</h3>
+          <p>Place Lion Labs in front of owners, executives, manufacturers, distributors, and multi-state decision-makers already working within regulated cannabis.</p>
+        </article>
+        <article class="opportunity-card">
+          <div class="card-accent" aria-hidden="true"></div>
+          <h3>Explain the business model</h3>
+          <p>Move beyond product awareness and show how a differentiated house of brands can expand an operator's portfolio without requiring every brand to be built from the ground up.</p>
+        </article>
+        <article class="opportunity-card">
+          <div class="card-accent" aria-hidden="true"></div>
+          <h3>Prioritize fit</h3>
+          <p>Use a purpose-built qualification path so Lion Labs can identify partners with the market access and operational strength it wants.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="formula-wrap" id="strategy">
+      <section class="section" aria-labelledby="strategy-title">
+        <p class="section-label">The strategy</p>
+        <h2 id="strategy-title">Built around the outcome.</h2>
+        <p class="section-lead">The campaign gives direct outreach stronger air cover. When Lion Labs approaches a prospective operator, that company can find a credible profile, understand the partnership model, and move into a clear qualification process.</p>
+
+        <div class="formula" aria-label="Campaign phases">
+          <article class="phase">
+            <div class="phase-kicker">Launch</div>
+            <h3>Build the partner pathway</h3>
+            <p>Establish the campaign's core message, conversion page, qualification criteria, and supporting creative.</p>
+            <ul>
+              <li>Native Lead-Gen page</li>
+              <li>Spotlight optimization</li>
+              <li>In-Page display launch</li>
+            </ul>
+          </article>
+          <article class="phase">
+            <div class="phase-kicker">Authority</div>
+            <h3>Give the opportunity context</h3>
+            <p>Use branded and contributed content for two separate purposes: explaining the offer and establishing Ryan's operating expertise.</p>
+            <ul>
+              <li>One branded feature</li>
+              <li>One contributed article opportunity</li>
+              <li>Newsletter amplification</li>
+            </ul>
+          </article>
+          <article class="phase">
+            <div class="phase-kicker">Demand</div>
+            <h3>Turn visibility into conversations</h3>
+            <p>Maintain visibility and direct qualified operators to the partner page to support the sales process.</p>
+            <ul>
+              <li>Qualified partner inquiries</li>
+              <li>News-driven announcements</li>
+              <li>Six-month optimization review</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="message-box">
+          <div class="label">Campaign message</div>
+          <blockquote>Bring proven cannabis brands into your market without building them from scratch.</blockquote>
+        </div>
+      </section>
+    </div>
+
+    <section class="section" id="program" aria-labelledby="program-title">
+      <p class="section-label">Campaign components</p>
+      <h2 id="program-title">A connected six-month program.</h2>
+      <p class="section-lead">Every element has a specific job. The Spotlight supports discovery and validation. Content explains the opportunity. Display and newsletter placements create repetition. Native Lead Gen converts and qualifies interest.</p>
+
+      <div class="services">
+        <article class="service">
+          <div class="service-top">
+            <div>
+              <div class="service-type">AI + SEO optimized conversion</div>
+              <h3>Native Lead Gen</h3>
+            </div>
+            <div class="price">$7,500</div>
+          </div>
+          <p>A dedicated, AI- and SEO-optimized six-month partner-acquisition page built around Lion Labs' licensing opportunity and designed to identify qualified operators.</p>
+          <ul>
+            <li>AI-readable structure, metadata, and internal connections</li>
+            <li>Search-focused campaign messaging and page development</li>
+            <li>Partner-fit qualification form</li>
+            <li>Lead reporting throughout the campaign</li>
+          </ul>
+        </article>
+
+        <article class="service">
+          <div class="service-top">
+            <div>
+              <div class="service-type">Visibility</div>
+              <h3>In-Page Display</h3>
+            </div>
+            <div class="price">$11,898</div>
+          </div>
+          <p>A premium in-content position with 33% share of voice, providing six months of consistent visibility and driving cannabis decision-makers directly to the Lion Labs partner page.</p>
+          <ul>
+            <li>Six consecutive months</li>
+            <li>Creative messaging built around partnership</li>
+            <li>Direct link to Native Lead Gen</li>
+            <li>Impression and click reporting</li>
+          </ul>
+        </article>
+
+        <article class="service">
+          <div class="service-top">
+            <div>
+              <div class="service-type">AI + SEO optimized company story</div>
+              <h3>Branded Content</h3>
+            </div>
+            <div class="price">$4,900</div>
+          </div>
+          <p>An AI- and SEO-optimized editorial-style feature written by the mg team after interviewing Lion Labs, with room to explain the portfolio, operating model, market experience, and partner opportunity.</p>
+          <ul>
+            <li>Interview and writing by mg</li>
+            <li>Search-focused structure, keywords, and metadata</li>
+            <li>AI-readable topic and entity connections</li>
+            <li>Crawlable publication on mgmagazine.com</li>
+            <li>Social promotion and do-follow connection</li>
+          </ul>
+        </article>
+
+        <article class="service">
+          <div class="service-top">
+            <div>
+              <div class="service-type">Audience reinforcement</div>
+              <h3>Newsletter Sponsorship</h3>
+            </div>
+            <div class="price">$1,650</div>
+          </div>
+          <p>Three deployments scheduled around campaign launch, content publication, and the strongest conversion period.</p>
+          <ul>
+            <li>Three sponsored deployments</li>
+            <li>Contextual brand visibility</li>
+            <li>Partner-content support</li>
+            <li>Delivery, impression, and click reporting</li>
+          </ul>
+        </article>
+
+        <article class="service">
+          <div class="service-top">
+            <div>
+              <div class="service-type">Market momentum</div>
+              <h3>Press Release Distribution</h3>
+            </div>
+            <div class="price">No charge</div>
+          </div>
+          <p>News-driven announcements aligned with confirmed partnerships, new-market entry, significant distribution, or meaningful product expansion are included at no charge with a current campaign.</p>
+          <ul>
+            <li>Publication through mg Newswire</li>
+            <li>Google News and Apple News syndication</li>
+            <li>Searchable, permanent publication</li>
+            <li>Timed to verified company news</li>
+          </ul>
+        </article>
+
+        <article class="service">
+          <div class="service-top">
+            <div>
+              <div class="service-type">Discovery foundation</div>
+              <h3>Company Spotlight</h3>
+            </div>
+            <div class="price">$2,945</div>
+          </div>
+          <p>Lion Labs began with a three-month complimentary Spotlight. The $2,945 continuation covers the remaining nine months and preserves the profile as the campaign's AI/search discovery foundation.</p>
+          <ul>
+            <li>Editorial company overview</li>
+            <li>Structured company and portfolio details</li>
+            <li>Ongoing AI and Google optimization</li>
+            <li>Website, entity, and internal content connections</li>
+          </ul>
+        </article>
+
+        <article class="service editorial">
+          <div class="editorial-grid">
+            <div>
+              <div class="service-type">Thought leadership / Existing Spotlight inclusion</div>
+              <h3>Contributed Article from Ryan Ratzloff</h3>
+              <p>Recommended topic: <strong>Why More SKUs Do Not Always Produce More Profit.</strong> Ryan can draw on his CPG and cannabis experience to discuss SKU rationalization, category discipline, cash flow, and matching products to the right retailers.</p>
+            </div>
+            <div class="editorial-note">
+              <div class="service-type">Editorial requirements</div>
+              <ul>
+                <li>Original and exclusive before publication</li>
+                <li>Typically 750–1,500 words</li>
+                <li>Educational and industry-focused, not promotional</li>
+                <li>No product pitches, sales language, or press-release copy</li>
+                <li>High-resolution headshot and short author bio required</li>
+                <li>Subject to editorial review and editing</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="investment-wrap" id="investment" aria-labelledby="investment-title">
+      <div class="section">
+        <p class="section-label">Investment</p>
+        <h2 id="investment-title">Begin with six. Build to twelve.</h2>
+        <p class="section-lead">Lion Labs began with a three-month complimentary Spotlight. Both campaign options continue it for the remaining nine months while building a broader national program around expansion priorities.</p>
+
+        <div class="options">
+          <article class="option recommended">
+            <span class="recommended-label">Recommended start</span>
+            <div class="option-kicker">Six months</div>
+            <h3>Partner Development</h3>
+            <p class="option-summary">A focused national campaign built to create and qualify licensing-partner conversations.</p>
+            <ul class="option-lines">
+              <li><span>Native Lead Gen / six months</span><span>$7,500</span></li>
+              <li><span>In-Page Display / six months</span><span>$11,898</span></li>
+              <li><span>AI + SEO Branded Content / one feature</span><span>$4,900</span></li>
+              <li><span>Newsletter Sponsorship / three</span><span>$1,650</span></li>
+              <li><span>Company Spotlight / remaining nine months</span><span>$2,945</span></li>
+              <li class="included"><span>Press Release Distribution / two</span><span>No charge</span></li>
+              <li class="included"><span>Contributed article opportunity</span><span>Included</span></li>
+            </ul>
+            <div class="total">
+              <div><div class="total-label">Campaign investment</div><small>Six-month program</small></div>
+              <strong>$28,893</strong>
+            </div>
+          </article>
+
+          <article class="option">
+            <div class="option-kicker">Twelve months</div>
+            <h3>National Growth</h3>
+            <p class="option-summary">A year-round platform supporting partner acquisition, confirmed market entries, and the next stage of portfolio expansion.</p>
+            <ul class="option-lines">
+              <li><span>Native Lead Gen / twelve months</span><span>$15,000</span></li>
+              <li><span>In-Page Display / twelve months</span><span>$23,796</span></li>
+              <li><span>AI + SEO Branded Content / two features</span><span>$9,800</span></li>
+              <li><span>Newsletter Sponsorship / six</span><span>$3,300</span></li>
+              <li><span>Company Spotlight / remaining nine months</span><span>$2,945</span></li>
+              <li class="included"><span>Press Release Distribution / three</span><span>No charge</span></li>
+              <li class="included"><span>Contributed article opportunity</span><span>Included</span></li>
+            </ul>
+            <div class="total">
+              <div><div class="total-label">Campaign investment</div><small>Twelve-month program</small></div>
+              <strong>$54,841</strong>
+            </div>
+          </article>
+        </div>
+        <p class="investment-note">All content and campaign claims are subject to client approval and mg editorial or advertising standards, as applicable. Before launch, mg and Lion Labs will confirm any market-share, margin, revenue, distribution, or performance figures used in campaign materials.</p>
+      </div>
+    </section>
+
+    <section class="section" id="measurement" aria-labelledby="measurement-title">
+      <p class="section-label">Campaign measurement</p>
+      <div class="measurement">
+        <h2 id="measurement-title">Success will be measured by business movement.</h2>
+        <ul>
+          <li>Qualified partner inquiries</li>
+          <li>Meetings with priority operators</li>
+          <li>Active state opportunities</li>
+          <li>Lead-page conversion rate</li>
+          <li>Content engagement</li>
+          <li>Display and newsletter response</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="cta-inner">
+        <p class="section-label">One simple next step</p>
+        <h2 id="cta-title">Tell us what you need the market to understand.</h2>
+        <p>We'll shape the clearest way to introduce the Lion Labs opportunity and begin building the right partner conversations.</p>
+        <div class="contact-actions">
+          <a class="button" href="https://calendly.com/brandi-inc-media/15min" target="_blank" rel="noreferrer">Schedule 15 minutes ↗</a>
+          <a class="email-link" href="mailto:brandi@inc-media.com">brandi@inc-media.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <span>Brandi Mesta / Senior Director, Brand Partnerships</span>
+        <a href="https://brandi-lgtm.github.io/mgMagazine_Media-Kit_2026/" target="_blank" rel="noreferrer">View the 2026 mg Media Kit ↗</a>
+      </div>
+      <span>Lion Labs / National B2B Campaign</span>
+      <a href="https://mgmagazine.com" target="_blank" rel="noreferrer">mgmagazine.com ↗</a>
+    </div>
+  </footer>
+</body>
+</html>
